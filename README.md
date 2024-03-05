@@ -1,5 +1,6 @@
 # Follow-along Project
 Project followed along, created by jamezmca https://github.com/jamezmca/hughjass
+Youtube Video Source: https://www.youtube.com/watch?v=-2UjwQzxvBQ
 
 # create-svelte
 
