@@ -1,5 +1,11 @@
 <script>
+    import Step from "./Step.svelte";
 
+    let steps = [
+        {name: 'NateKimDev Store', icon: 'fa-solid fa-cart-shopping'},
+        {name: 'Ultimate Todos', icon: 'fa-solid fa-list-check'},
+        {name: 'Pokedex', icon: 'fa-solid fa-diagram-project'},
+    ]
 </script>
 
 <main id="flex flex-col flex-1 p-4">
@@ -40,5 +46,16 @@
             <i class="fa-regular fa-circle-play" />
             <p>Watch the video</p>
         </a>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
+            <Step step={steps[0]}>
+                <p>NateKimDev Store is a merchandising store created with <strong class="text-violet-400">Next.js Commerce.js Stripe & Node.js + Express.js!</strong> Commerce.js is a product CMS and Strope is used for all transaction handling.</p>
+            </Step>
+            <Step step={steps[1]}>
+                <p>NateKimDev Store is a merchandising store created with <strong class="text-violet-400">Next.js, Node.js + Express.js & Firebase!</strong> CRUD application that allows a user to login, manage a tidy and efficacious todo list, and persist this information across all devices.</p>
+            </Step>
+            <Step step={steps[2]}>
+                <p>The pokedex is a <strong class="text-violet-400">SvelteKit & TailwindCSS </strong> web application, hosted on <strong class="text-violet-400">Netlify</strong>, that consumes and caches the <strong class="text-violet-400"> Pokemon API</strong> to display all Pokemon information. Gotta catch'em all!</p>
+            </Step>
+        </div>
     </section>
 </main>
