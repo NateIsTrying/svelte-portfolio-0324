@@ -66,5 +66,11 @@
         <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
             A bit <span class="poppins text-violet-400">about</span> me.
         </h3>
+        <p class="mx-auto poppinsfont-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
+        <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+            {#each benefits as benefit, index}
+            <div class="flex gap-6 sm:gap-8"></div>
+            {/each}
+        </div>
     </section>
 </main>
