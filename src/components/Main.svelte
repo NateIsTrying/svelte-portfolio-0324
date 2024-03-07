@@ -5,6 +5,12 @@
         {name: 'NateKimDev Store', icon: 'fa-solid fa-cart-shopping'},
         {name: 'Ultimate Todos', icon: 'fa-solid fa-list-check'},
         {name: 'Pokedex', icon: 'fa-solid fa-diagram-project'},
+    ];
+
+    let benefits =[
+        {name: 'a self taught developer', description: "I taught myself to code using free online resources and absolutely fell in love with the creativity and problem solving that is involved in developing and engineering innovative new online experiences. Starting of with JavaScript, HTML & CSS and evolving my knowledge base to include JavaScript frameworks, backend programming, design, cloud services and much much more."},
+        {name:'a product design & UX fanatic', description: "Carefully crafting and designing amazing user experiences allows me to express and experiment with every morsel of creativity I have. I love the challenge of learning new design concepts and enabling users with amazing online experiences."},
+        {name:'an excellent communicator', description: "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team."},
     ]
 </script>
 
@@ -43,15 +49,24 @@
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
             target="_blank" 
             class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200">
-            <i class="fa-regular fa-circle-play" />
-            <p>Watch the video</p>
+            <i class="fa-regular fa-circle-play"/> 
+            <p> Watch the video </p>
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
-                <p>NateKimDev Store is a merchandising store created with <strong class="text-violet-400">Next.js Commerce.js Stripe & Node.js + Express.js!</strong> Commerce.js is a product CMS and Strope is used for all transaction handling.</p>
+                <p>NateKimDev Store is a merchandising store created with <strong class="text-violet-400">Next.js, Node.js + Express.js & Firebase!</strong> CRUD application that allows a user to login, manage a tidy and efficacious todo list, and persist this information across all devices.</p>
             </Step>
             <Step step={steps[1]}>
-                <p>NateKimDev Store is a merchandising store created with <strong class="text-violet-400">Next.js, Node.js + Express.js & Firebase!</strong> CRUD application that allows a user to login, manage a tidy and efficacious todo list, and persist this information across all devices.</p>
+                <p>
+                    Ultimate Todos is a Full Stack <strong
+                        class="text-violet-400">Next.js</strong
+                    >,
+                    <strong class="text-violet-400">Node.js + Express.js</strong
+                    >
+                    & <strong class="text-violet-400">Firebase</strong> CRUD application
+                    that allows a user to login, manage a tidy and efficacious todo
+                    list, and persist this information across devices.
+                </p>
             </Step>
             <Step step={steps[2]}>
                 <p>The pokedex is a <strong class="text-violet-400">SvelteKit & TailwindCSS </strong> web application, hosted on <strong class="text-violet-400">Netlify</strong>, that consumes and caches the <strong class="text-violet-400"> Pokemon API</strong> to display all Pokemon information. Gotta catch'em all!</p>
@@ -69,8 +84,37 @@
         <p class="mx-auto poppinsfont-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
             {#each benefits as benefit, index}
-            <div class="flex gap-6 sm:gap-8"></div>
+            <div class="flex gap-6 sm:gap-8">
+                <p class="poppins text04xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
+                    0{index+1}
+                </p>
+                <div class="flex flex-col gap-6 sm:gap-8">
+                    <h3 class="text-2xl sm:text-3xl md:text-5xl">
+                        {benefit.name}
+                    </h3>
+                    <p>{benefit.description}</p>
+                </div>
+            </div>
             {/each}
+        </div>
+        <h5>The <span class="text-violet-400">Complete</span> Package</h5>
+        <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
+            <table class="bg-white text-slate-700 rounded text-center">
+                <thead class="border-b border-solid border-slate-200">
+                    <tr class="">
+                        <th/>
+                        <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
+                        <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
+                        <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
+                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">Me</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-solid border-slate-200">
+
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 </main>
